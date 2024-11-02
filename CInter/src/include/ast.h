@@ -29,7 +29,7 @@ struct Expression : public Statement {
 };
 
 struct Program : public Statement {
-    std::vector<std::unique_ptr<Statement>> body;
+    std::vector<std::shared_ptr<Statement>> body;
 
     Program() {
         kind = NodeType::Program;

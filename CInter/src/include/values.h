@@ -56,7 +56,7 @@ struct ObjectValue : public RuntimeValue {
 	std::map<std::string, std::unique_ptr<RuntimeValue>> properties;
 };
 
-using FunctionCall = std::function<RuntimeValue>(const std::vector<RuntimeValue>&, Environment&);
+using FunctionCall = std::function<RuntimeValue>(std::vector<RuntimeValue>&, Environment&);
 
 struct NativeFunctionValue : public RuntimeValue {
 	ValueType getType() const override {

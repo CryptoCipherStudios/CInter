@@ -3,8 +3,7 @@
 #include "parser.h"
 
 int main() {
-    std::string sourceCode = "let x = (5 + 10);";
-
+    std::string sourceCode = "const x = (5 + 10);";
 
     std::cin.get();
 

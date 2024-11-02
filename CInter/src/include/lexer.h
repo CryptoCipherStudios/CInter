@@ -7,25 +7,25 @@
 #include <unordered_map>
 
 enum TokenType {
-	Number,
-	Identifier,
-	Let,
-	Const,
-	Exostatic,
-	Static,
-	BinaryOperaotr,
-	Equals, 
-	Comma,
-	Colon,
-	Semicolon,
-	OpenParen,
-	CloseParen,
-	OpenBrace,
-	CloseBrace,
-	OpenBracket,
-	CloseBracket,
-	Dot,
-	_EOF,
+	Number, // 0
+	Identifier, // 1
+	Let, // 2
+	Const, // 3
+	Exostatic, // 4
+	Static, // 5
+	BinaryOperator, // 6
+	Equals, // 7
+	Comma, // 8
+	Colon, // 9
+	Semicolon, // 10
+	OpenParen, // 11
+	CloseParen, // 12
+	OpenBrace, // 13
+	CloseBrace, // 14
+	OpenBracket, // 15
+	CloseBracket, // 16
+	Dot, // 17
+	_EOF, // 18
 };
 
 const std::unordered_map<std::string, TokenType> KEYWORDS {

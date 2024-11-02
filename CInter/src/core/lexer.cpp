@@ -87,7 +87,7 @@ std::vector<Token> Tokenize(const std::string& sourceCode)
 			case '*':
 			case '/':
 			case '%':
-				tokens.push_back({ std::string(1, ch), TokenType::BinaryOperaotr});
+				tokens.push_back({ std::string(1, ch), TokenType::BinaryOperator});
 				++it;
 				break;
 
